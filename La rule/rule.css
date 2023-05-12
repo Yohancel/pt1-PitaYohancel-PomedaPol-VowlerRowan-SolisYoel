@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+body{
+    background-color: black;
+    color: orange;
+    text-align: center;
+}
+#encabezado{
+    height: 82px;
+    text-align: left;
+}
+.logo{
+    height: 80px;
+    float: left;
+}
+
+.javiscript{
+    float: left;
+    margin-left: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: orange;
+    font-size: x-large;
+    margin-left: 20px;
+    width: 100px;
+}
+
+a:hover{
+    cursor: pointer;
+    font-size: xx-large;
+    transition: 1s;
+}
+
+#menu{
+    float: right;
+    color: orange;
+    margin: 20px;
+    margin-top: 0px;
+}
+
+.title{
+    font-size: xxx-large;
+    font-family: 'Roboto Mono', monospace;
+    margin: 3%;
+}
+
+button{
+    height: 30px;
+    margin-top:0px;
+    padding-top: 0px;
+    background-color: orange;
+    font-weight: bold;
+}
+
+body.dark {
+    background-color: white; /* Tema oscuro */
+}
