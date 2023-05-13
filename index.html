@@ -1,55 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Reloj javiscript</title>
-<meta name="author" content="El Polpu">
-<meta name="description" content="M04 UF3 A1 Cuenta atras">
-<meta name="dateCreated" content="05/05/2023">
-<link rel="stylesheet" text="text/css" href="/Cuenta atras/cuenta_atras.css">
-<script src="/Cuenta atras/cuenta_atras.js"></script>
-
+    <meta charset="UTF-8">
+    <title>JaviScript.com</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            font-size: 24px;
+        }
+    </style>
 </head>
+<body>
+    <h1>Bienvenido a JaviScript.com</h1>
+    <button onclick="location.href='/Cuenta atras/Reloj javiscript.html'">Abrir Alarma</button>
+    <button onclick="location.href='/La rule/rule.html'">Abrir Ruleta</button>
+</body>
+</html>
 
-<body onload="updateClock()">
-    <audio id="sonido-alarma">
-        <source src="/Cuenta atras/sonidoAlarma.mp3" type="audio/mpeg">
-    </audio>
-    <div id="encabezado">
-        <img class="logo" src="/JavaScript-logo.png" alt="LOGO JS">
-        <h1 class="javiscript">JaviScript.com</h1>
-        <div id="menu">
-            <h1>
-                <a href="/La rule/rule.html">larule</a>
-                <a href="index.html">alarma</a>
-            </h1>
-        </div>
-    </div>
-    <div class="title">Alarma</div>
-    <div class="cajaAlarma">
-        <div id="divpng"><img id="alarmapng" src="/Cuenta atras/alarma.png" alt="un reloj"></div>
-        <div id="divresultado"><h1 id="resultado">00:00</h1></div>
-        <div id="divrestante"><h1 id="calcularTiempoRestante">00:00</h1></div>
-    </div>
-    <form id="alarma">
-        <div class="horaAlarm">Hora de l'alarma</div>
-        <div class="formulario">
-            <input type="time" id="hora">
-            <button id="programAlarm" type="button" onclick="guardarHora()">Guardar</button>
-        </div>
-    </form>
-    <form id="sumarAlarma">
-        <div class="horaAlarm">Sumar minuts</div>
-        <div class="formulario">
-            <input type="time" id="sumaHora">
-            <button id="programAlarm" type="button" onclick="updateAlarm()">Guardar</button>
-        </div>
-    </form>
-    <h1 class="hora" id="actualTime">hh:mm:ss</h1>
-    <footer>
-        <button type="button" onclick="cambiarTema()">Cambiar tema</button>
-    </footer>
-
-
-</body></html>
